@@ -118,7 +118,7 @@ public abstract class Projectile : MonoBehaviour
         Active = false;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         pool.Clear();
     }
